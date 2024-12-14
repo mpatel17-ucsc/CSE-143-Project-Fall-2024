@@ -8,7 +8,7 @@ For the GloVe file for embedding, go to https://nlp.stanford.edu/projects/glove/
 2. contractions.json- A list of contractions and their expanded forms in json format
 3. LSTM.ipynb- The code and training loop for our LSTM based approach
 4. model.ipynb- The entire model architecture for our BERT+POS tagging approach
-5. requirements.txt- A few required libraries to run the projects 
+5. requirements.txt- A few required libraries to run BERT.ipynb (Install necessary packages for LSTM.ipynb) 
 
 To run the LSTM + GloVe file, simply go to the file and run the cell. It will start training and printing out the accuracy of each epoch. You will see 2 accuracies: Main Accuracy and Auxiliary Accuracy. Main Accuracy is just general accuracy of whether a comment is toxic without taking account of identities, while Auxiliary Accuracy is accuracy of whether a comment is toxic with respect to minimizing bias from certain identities.
 
