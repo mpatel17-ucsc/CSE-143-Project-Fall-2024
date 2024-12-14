@@ -3,10 +3,6 @@ from transformers import TFAutoModel, AutoTokenizer
 
 class CombinedEmbeddingModel(tf.keras.Model):
     def __init__(self, num_secondary_embeddings, embedding_dim, dropout_rate=0.3):
-        """
-        A model that uses BERT for token encodings, concatenates with secondary embeddings,
-        and applies a fully connected neural network for binary classification.
-        """
         super(CombinedEmbeddingModel, self).__init__()
         self.bert = TFAutoModel.from_pretrained("bert-base-uncased", trainable=False)
 
